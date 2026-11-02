@@ -1,3 +1,4 @@
+import os
 import requests
 from PIL import Image
 from io import BytesIO
@@ -8,7 +9,7 @@ url = "https://openjourney1.p.rapidapi.com/models/stabilityai/stable-diffusion-x
 payload = { "inputs": "Computer Vision " }
 headers = {
 	"content-type": "application/json",
-	"X-RapidAPI-Key": "9c33797ae9msh214c753802a05b9p1b7330jsn391debf27903",
+	"X-RapidAPI-Key": os.getenv("RAPID_API_KEY"),
 	"X-RapidAPI-Host": "openjourney1.p.rapidapi.com"
 }
 

@@ -1,3 +1,4 @@
+import os
 import requests
 
 url = "https://twitter241.p.rapidapi.com/user-tweets"
@@ -5,7 +6,7 @@ url = "https://twitter241.p.rapidapi.com/user-tweets"
 querystring = {"user":"2455740283","count":"20"}
 
 headers = {
-	"X-RapidAPI-Key": "1564210467msh4411bee5b04f222p1e09dcjsn04cef6c0a400",
+	"X-RapidAPI-Key": os.getenv("RAPID_API_KEY"),
 	"X-RapidAPI-Host": "twitter241.p.rapidapi.com"
 }
 

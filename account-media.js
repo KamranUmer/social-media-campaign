@@ -8,7 +8,7 @@ const options = {
     first: '10'
   },
   headers: {
-    'X-RapidAPI-Key': '6453a65c59mshe869d90e296c524p179988jsna211f3933f70',
+    'X-RapidAPI-Key': process.env.RAPID_API_KEY,
     'X-RapidAPI-Host': 'instagram130.p.rapidapi.com'
   }
 };

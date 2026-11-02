@@ -1,3 +1,4 @@
+import os
 import requests
 
 url = "https://instagram-statistics-api.p.rapidapi.com/community"
@@ -5,7 +6,7 @@ url = "https://instagram-statistics-api.p.rapidapi.com/community"
 querystring = {"url":"https://www.instagram.com/verve_0304"}
 
 headers = {
-	"X-RapidAPI-Key": "9c33797ae9msh214c753802a05b9p1b7330jsn391debf27903",
+	"X-RapidAPI-Key": os.getenv("RAPID_API_KEY"),
 	"X-RapidAPI-Host": "instagram-statistics-api.p.rapidapi.com"
 }
 
